@@ -46,7 +46,7 @@ Here is a basic diagram of how the 5 services will work:
     - on backend network
     - 1 replica
 
-`docker service create --network backend --name db --mount type=volume,source=db-data,target=/var/lib/postgresql/data -e POSTGRES_PASSWORD=mypass postgres:9.4`
+`docker service create --network backend --name db --mount type=volume,source=db-data,target=/var/lib/postgresql/data postgres:9.4`
 
 - result
     - dockersamples/examplevotingapp_result:before
@@ -57,3 +57,4 @@ Here is a basic diagram of how the 5 services will work:
     - 1 replica
 
 `docker service create --network backend --name result -p 5001:80 dockersamples/examplevotingapp_result:before`
+ 
