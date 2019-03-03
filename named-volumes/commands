@@ -1,0 +1,5 @@
+"docker run -d --name postgres1 -v postgresvol:/var/lib/postgresql/data postgres:9.6.1"  
+"docker container logs -f postgres1 > logs"  
+"docker container stop postgres1"  
+"docker run -d --name postgres2 -v postgresvol:/var/lib/postgresql/data postgres:9.6.1"  
+"docker volume ls"  
