@@ -1,0 +1,1 @@
+"docker run -d -p 80:4000 --name jekyll -v d:/development/training/docker-mastery/assignments/bind-mounts/:/site bretfisher/jekyll-serve" 
